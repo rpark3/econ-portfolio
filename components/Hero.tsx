@@ -12,22 +12,24 @@ export default function Hero() {
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
-            <p className="text-sm font-semibold tracking-widest uppercase text-primary mb-3">
-              Economics & Data Science
-            </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-slate-100 leading-tight mb-4">
-              Ryan Park
-            </h1>
-            <p className="text-xl text-slate-500 dark:text-slate-400 mb-2">
-              BS Biology, Minor in Economics · Northeastern University
-            </p>
-            <p className="text-base text-slate-600 dark:text-slate-400 max-w-lg mx-auto md:mx-0 leading-relaxed mb-8">
-              I sit at the intersection of biological systems and economic
-              thinking — applying data science to questions where incentives,
-              populations, and outcomes all interact. From modeling disease
-              dynamics to analyzing health policy, I use Python and statistical
-              inference to turn complex data into actionable insight.
-            </p>
+            <div className="max-w-lg mx-auto md:mx-0 mb-8 bg-[#dce8f7] dark:bg-[#1a2744] rounded-2xl px-5 py-5">
+              <p className="text-sm font-semibold tracking-widest uppercase text-primary mb-3">
+                Economics & Data Science
+              </p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-slate-100 leading-tight mb-4">
+                Ryan Park
+              </h1>
+              <p className="text-xl text-slate-500 dark:text-slate-400 mb-3">
+                BS Biology, Minor in Economics · Northeastern University
+              </p>
+              <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                I sit at the intersection of biological systems and economic
+                thinking — applying data science to questions where incentives,
+                populations, and outcomes all interact. From modeling disease
+                dynamics to analyzing health policy, I use Python and statistical
+                inference to turn complex data into actionable insight.
+              </p>
+            </div>
 
             <div className="flex items-center justify-center md:justify-start gap-4">
               <a

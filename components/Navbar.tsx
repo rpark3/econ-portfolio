@@ -28,17 +28,11 @@ export default function Navbar() {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
 
   return (
-    <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/85 dark:bg-[#0d0d14]/85 backdrop-blur-md shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 w-full z-50 bg-[#1e293b] dark:bg-[#0d111a] shadow-md">
       <nav className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#hero"
-          className="text-lg font-bold tracking-tight text-primary hover:opacity-75 transition-opacity"
+          className="text-lg font-bold tracking-tight text-white hover:opacity-75 transition-opacity"
         >
           RP
         </a>
@@ -49,7 +43,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors"
+                className="text-sm text-blue-100 hover:text-white transition-colors"
               >
                 {link.label}
               </a>
@@ -62,7 +56,7 @@ export default function Navbar() {
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="p-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              className="p-2 rounded-full text-blue-100 hover:bg-white/20 transition-colors"
             >
               {resolvedTheme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
@@ -70,7 +64,7 @@ export default function Navbar() {
 
           {/* Mobile menu toggle */}
           <button
-            className="md:hidden p-2 rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            className="md:hidden p-2 rounded-full text-blue-100 hover:bg-white/20 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -81,12 +75,12 @@ export default function Navbar() {
 
       {/* Mobile dropdown */}
       {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-[#0d0d14] border-t border-slate-100 dark:border-slate-800 px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-[#1e293b] dark:bg-[#0d111a] border-t border-white/20 px-6 py-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors"
+              className="text-sm text-blue-100 hover:text-white transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}

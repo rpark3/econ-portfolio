@@ -23,11 +23,12 @@ export default function Hero() {
                 BS Biology, Minor in Economics · Northeastern University
               </p>
               <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
-                I sit at the intersection of biological systems and economic
-                thinking — applying data science to questions where incentives,
-                populations, and outcomes all interact. From modeling disease
-                dynamics to analyzing health policy, I use Python and statistical
-                inference to turn complex data into actionable insight.
+                I&apos;m a pre-med student at Northeastern University with a
+                strong interest in economics and how market forces shape
+                healthcare, policy, and patient outcomes. I use data science and
+                statistical modeling to bridge the gap between biological systems
+                and economic decision-making — turning complex data into
+                insight that matters.
               </p>
             </div>
 
